@@ -26,7 +26,7 @@ You will need Node and Yarn. If you don't already have them, do this on macOS:
 
 1. Get [Now](https://zeit.co/download)
 2. `yarn run build`
-3. `now`
+3. `now --public`
 
 ## Testing
 
