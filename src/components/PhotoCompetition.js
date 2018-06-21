@@ -22,7 +22,7 @@ const PhotoCompetition = () => (
     <h3 className="page__title">Témy</h3>
     <List
       dataSource={photoCompetitionTopics}
-      renderRow={(row) => <ListItem>{row}</ListItem>}
+      renderRow={(row, i) => <ListItem key={i}>{row}</ListItem>}
     />
     <h3 className="page__title">Fotky</h3>
     <PhotoCard></PhotoCard>
