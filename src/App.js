@@ -20,7 +20,7 @@ const App = () => (
         </div>
         <div className='center'>Svadba</div>
         <div className='right'>
-          <label class="switch">
+          <label className="switch">
             <input type="checkbox" className="switch__input" />
             <div className="switch__toggle">
               <div className="switch__handle"></div>
@@ -28,7 +28,7 @@ const App = () => (
           </label>
         </div>
       </Toolbar>
-      <div style={{paddingTop: '100px'}}>
+      <div>
         <Route path="/drinks" component={Navigation} />
         <Route path="/photo-competition" component={Navigation} />
         <Route path="/program" component={Navigation} />
