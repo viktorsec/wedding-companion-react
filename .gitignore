@@ -72,5 +72,8 @@ typings/
 # Serverless directories
 .serverless
 
+# DS Store
+.DS_Store
+
 # build
 build/
