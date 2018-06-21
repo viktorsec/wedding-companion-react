@@ -1,5 +1,11 @@
 import React, { Component } from 'react';
+import PhotoCard from './PhotoCard';
 
-const PhotoCompetition = () => <h1>Photo Competition</h1>;
+const PhotoCompetition = () => (
+	<div>
+		<h1>Photo Competition</h1>
+		<PhotoCard></PhotoCard>
+	</div>
+);
 
 export default PhotoCompetition;
