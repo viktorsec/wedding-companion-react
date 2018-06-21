@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, HashRouter, withRouter } from 'react-router-dom';
-import { Page } from 'react-onsenui';
+import { Page, Toolbar } from 'react-onsenui';
 import Drinks from './components/Drinks';
 import Gdpr from './components/Gdpr';
 import PhotoCompetition from './components/PhotoCompetition';
@@ -15,13 +15,25 @@ import './App.css';
 const App = () => (
   <HashRouter>
     <Page>
-      <header className="App-header">
-        Svadba
-      </header>
+      <Toolbar>
+        <div className='left'>
+        </div>
+        <div className='center'>Svadba</div>
+        <div className='right'>
+          <label class="switch">
+            <input type="checkbox" className="switch__input" />
+            <div className="switch__toggle">
+              <div className="switch__handle"></div>
+            </div>
+          </label>
+        </div>
+      </Toolbar>
+      <div style={{paddingTop: '100px'}}>
         <Route path="/drinks" component={Navigation} />
         <Route path="/photo-competition" component={Navigation} />
         <Route path="/program" component={Navigation} />
         <Route path="/transport" component={Navigation} />
+      </div>
       <div>
         <Route exact path="/" component={Gdpr} />
         <Route path="/drinks" component={Drinks} />

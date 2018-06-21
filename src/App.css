@@ -27,9 +27,30 @@
   to { transform: rotate(360deg); }
 }
 
+.page__content {
+  padding-top: 50px;
+}
 .list-item__label {
   min-width: 70px;
 }
 .page__content .card__title {
   margin-top: 0;
+}
+.page__title {
+  text-align: center;
+}
+.card-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.35rem;
+  margin-bottom: 0.7rem;
+}
+.card-description-label {
+  background-color: #aaa;
+  color: white;
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.25rem;
+  margin-right: 0.5rem;
 }
