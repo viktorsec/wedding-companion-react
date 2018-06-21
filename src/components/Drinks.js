@@ -4,7 +4,7 @@ import { List, ListItem, Card } from 'react-onsenui';
 const Drinks = () => (
     <div>
         <Card>
-            <h2 class="card__title">Vína</h2>
+            <h2 className="card__title">Vína</h2>
             Keďže svadba sa koná vo vinárstve, v prvom rade vám odporúčame vychutnať si domáce produkty. <strong>Ženích odporúča:</strong> Pre horúce letné dni je ideálnym vínom Pinot Noir rosé. Klasici si pochutnajú na Rieslingu.
         </Card>
 
@@ -24,7 +24,7 @@ const Drinks = () => (
         </List>
 
         <Card>
-            <h2 class="card__title">Tvrdé</h2>
+            <h2 className="card__title">Tvrdé</h2>
             Dostupný je otvorený bar so širkou selekciou populárneho tvrdého alkoholu.
         </Card>
 
@@ -53,7 +53,7 @@ const Drinks = () => (
         </List>
 
         <Card>
-            <h2 class="card__title">Iné</h2>
+            <h2 className="card__title">Iné</h2>
             Reštaurácia má otvorený bar, kde si môžete dať ďalšie nápoje, na ktoré by ste mali chuť, napríklad kávu alebo pivo.
         </Card>
     </div>
