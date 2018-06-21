@@ -1,18 +1,17 @@
 import React from 'react';
 import { List, ListItem } from 'react-onsenui';
+import { schedule } from './consts/Schedule'
 
 const Program = () => (
     <div>
       <h3 className="page__title">Program</h3>
       <List>
-        <ListItem>
-          <div className="list-item__label">13:00</div>
-          Welcome drink
-        </ListItem>
-        <ListItem>
-          <div className="list-item__label">14:00</div>
-          Obrad
-        </ListItem>
+        { schedule.map((item, i) => (
+            <ListItem key={i}>
+                <div className="list-item__label">{ item.time }</div>
+                { item.description }
+            </ListItem>
+        )) }
       </List>
     </div>
 );
