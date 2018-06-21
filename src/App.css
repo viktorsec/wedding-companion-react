@@ -27,9 +27,15 @@
   to { transform: rotate(360deg); }
 }
 
+.page__content {
+  padding-top: 50px;
+}
 .list-item__label {
   min-width: 70px;
 }
 .page__content .card__title {
   margin-top: 0;
+}
+.page__title {
+  text-align: center;
 }

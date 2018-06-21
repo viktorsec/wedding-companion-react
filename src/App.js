@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, HashRouter } from 'react-router-dom';
-import { Page } from 'react-onsenui';
+import { Page, Toolbar } from 'react-onsenui';
 import Drinks from './components/Drinks';
 import PhotoCompetition from './components/PhotoCompetition';
 import Program from './components/Program';
@@ -16,10 +16,20 @@ const OtherPage = () => <h1>Other Page</h1>;
 const App = () => (
   <HashRouter>
     <Page>
-      <header className="App-header">
-        Svadba
-      </header>
-      <Navigation />
+      <Toolbar>
+        <div className='left'>
+        </div>
+        <div className='center'>Svadba</div>
+        <div className='right'>
+          <label class="switch">
+            <input type="checkbox" className="switch__input" />
+            <div className="switch__toggle">
+              <div className="switch__handle"></div>
+            </div>
+          </label>
+        </div>
+      </Toolbar>
+      <Navigation style={{paddingTop: '100px'}} />
       <div>
         <Route path="/drinks" component={Drinks} />
         <Route path="/photo-competition" component={PhotoCompetition} />
