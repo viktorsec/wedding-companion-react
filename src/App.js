@@ -1,7 +1,8 @@
 import React from 'react';
-import { Route, HashRouter } from 'react-router-dom';
+import { Route, HashRouter, withRouter } from 'react-router-dom';
 import { Page, Toolbar } from 'react-onsenui';
 import Drinks from './components/Drinks';
+import Gdpr from './components/Gdpr';
 import PhotoCompetition from './components/PhotoCompetition';
 import Program from './components/Program';
 import Navigation from './components/Navigation';
@@ -10,8 +11,6 @@ import 'onsenui/css/onsenui.css';
 import 'onsenui/css/onsen-css-components.css';
 import './App.css';
 
-const Home = () => <h1>Home</h1>;
-const OtherPage = () => <h1>Other Page</h1>;
 
 const App = () => (
   <HashRouter>
@@ -29,8 +28,14 @@ const App = () => (
           </label>
         </div>
       </Toolbar>
-      <Navigation style={{paddingTop: '100px'}} />
+      <div style={{paddingTop: '100px'}}>
+        <Route path="/drinks" component={Navigation} />
+        <Route path="/photo-competition" component={Navigation} />
+        <Route path="/program" component={Navigation} />
+        <Route path="/transport" component={Navigation} />
+      </div>
       <div>
+        <Route exact path="/" component={Gdpr} />
         <Route path="/drinks" component={Drinks} />
         <Route path="/photo-competition" component={PhotoCompetition} />
         <Route path="/program" component={Program} />
