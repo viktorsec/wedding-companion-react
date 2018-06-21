@@ -1,26 +1,36 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { Route, NavLink, HashRouter } from 'react-router-dom';
+import Drinks from './components/Drinks';
+import PhotoCompetition from './components/PhotoCompetition';
+import Program from './components/Program';
+import Transport from './components/Transport';
 import './App.css';
-
-import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 const Home = () => <h1>Home</h1>;
 const OtherPage = () => <h1>Other Page</h1>;
 
 const App = () => (
-  <div className="App">
-    <header className="App-header">
-      <Router>
+  <HashRouter>
+    <div className="App">
+      <header className="App-header">
+        Svadba
+      </header>
         <div>
-          <Route exact path="/" component={Home} />
-          <Route path="/other-page" component={OtherPage} />
+          <Route path="/drinks" component={Drinks} />
+          <Route path="/photo-competition" component={PhotoCompetition} />
+          <Route path="/program" component={Program} />
+          <Route path="/transport" component={Transport} />
         </div>
-      </Router>
-    </header>
-    <p className="App-intro">
-      Hey there. Go to the <a href="other-page">other page</a>. Pleb.
-    </p>
-  </div>
+      <p className="App-intro">
+        <ul>
+          <li><NavLink to="/program">Program</NavLink></li>
+          <li><NavLink to="/drinks">Nápoje</NavLink></li>
+          <li><NavLink to="/photo-competition">Fotosúťaž</NavLink></li>
+          <li><NavLink to="/transport">Doprava</NavLink></li>
+        </ul>
+      </p>
+    </div>
+  </HashRouter>
 );
 
 export default App;
