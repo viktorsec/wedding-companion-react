@@ -73,3 +73,14 @@ a {
   width: 100%;
   height: auto;
 }
+
+.button__large {
+  display: inline-block;
+  margin: 15px;
+  width: 90%;
+}
+
+.container__center {
+  width: 100%;
+  text-align: center;
+}

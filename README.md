@@ -19,14 +19,16 @@ You will need Node and Yarn. If you don't already have them, do this on macOS:
 ### Local network
 
 1. `yarn global add serve` (install serve)
-2. `yarn run build` (build)
-3. `serve -s build` (deploy)
+2. rename `src/components/consts/Secret.js.template` to `Secret.js` and set Google Album Uri
+3. `yarn run build` (build)
+4. `serve -s build` (deploy)
 
 ### Remote server / Production
 
 1. Get [Now](https://zeit.co/download)
-2. `yarn run build`
-3. `now --public`
+2. rename `src/components/consts/Secret.js.template` to `Secret.js` and set Google Album Uri
+3. `yarn run build`
+4. `now --public`
 
 ## Testing
 
