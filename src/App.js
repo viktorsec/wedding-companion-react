@@ -29,13 +29,7 @@ const App = () => (
           </label>
         </div>
       </Toolbar>
-      <div>
-        <Route path="/drinks" component={Navigation} />
-        <Route path="/photo-competition" component={Navigation} />
-        <Route path="/program" component={Navigation} />
-        <Route path="/transport" component={Navigation} />
-        <Route path="/help" component={Navigation} />
-      </div>
+      <Navigation />
       <div>
         <Route exact path="/" component={Gdpr} />
         <Route path="/drinks" component={Drinks} />
