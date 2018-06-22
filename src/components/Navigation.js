@@ -8,7 +8,9 @@ class NavigationItem extends Component {
         return (
             <label className="tabbar__item">
               <NavLink to={this.props.to}>
-                  <button className="tabbar__button">
+                  <button className={
+                      isSelected ? 'tabbar__button__pressed' : 'tabbar__button'
+                  }>
                     <Icon icon={this.props.icon} className="tabbar__icon" />
                     <div className="tabbar__label">{this.props.text}</div>
                   </button>
