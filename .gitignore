@@ -77,3 +77,6 @@ typings/
 
 # build
 build/
+
+# secrets
+src/components/consts/Secret.js
