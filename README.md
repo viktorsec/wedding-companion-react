@@ -23,12 +23,19 @@ You will need Node and Yarn. If you don't already have them, do this on macOS:
 3. `yarn run build` (build)
 4. `serve -s build` (deploy)
 
-### Remote server / Production
+Your app will be available on your network on `{HOST_IP}:5000`.
+
+### Remote development environment
 
 1. Get [Now](https://zeit.co/download)
 2. rename `src/components/consts/Secret.js.template` to `Secret.js` and set Google Album Uri
 3. `yarn run build`
 4. `now --public`
+
+### Production
+
+1. `yarn run build`
+2. Copy static build files to ftp server.
 
 ## Testing
 
