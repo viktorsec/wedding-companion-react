@@ -25,7 +25,7 @@ const Drinks = () => (
 
         <Card>
             <h2 className="card__title">Tvrdé</h2>
-            Dostupný je otvorený bar so širkou selekciou populárneho tvrdého alkoholu.
+            Dostupný je otvorený bar so širokou selekciou populárneho tvrdého alkoholu.
         </Card>
 
         <List>
