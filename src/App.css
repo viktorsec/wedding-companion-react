@@ -73,6 +73,18 @@ a {
   width: 100%;
   height: auto;
 }
+.australia {
+  transform: rotate(180deg);
+}
+.comicScript {
+  font-family: "Comic Sans MS", "Comic Sans", "Chalkboard", cursive;
+}
+.reverse {
+  transform: scaleX(-1);
+}
+.transparent {
+  opacity: 0.2;
+}
 .tabbar__button__pressed {
   display: block;
   text-align: center;
