@@ -75,7 +75,7 @@ class App extends Component {
             </div>
             <div className='center'>Svadba</div>
             <div className='right'>
-              <label className="switch" style={{margin: '10px'}} onClick={() => this.doMagic()}>
+              <label className="switch" style={{margin: '6px'}} onClick={() => this.doMagic()}>
                 <input type="checkbox" className="switch__input" />
                 <div className="switch__toggle">
                   <div className="switch__handle"></div>
