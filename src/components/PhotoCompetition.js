@@ -1,6 +1,6 @@
 import React from 'react';
-import PhotoCard from './PhotoCard';
-import { List, ListItem } from 'react-onsenui';
+import { Button, List, ListItem } from 'react-onsenui';
+import { googleAlbumUri } from './consts/Secret';
 
 const photoCompetitionTopics = [
   '1. Žena bez topánok',
@@ -18,14 +18,17 @@ const photoCompetitionTopics = [
 ];
 
 const PhotoCompetition = () => (
-  <div>
-    <h3 className="page__title">Témy</h3>
+  <div className="conatiner__center">
+    <h3 className="page__title" style={{marginTop: '30px'}}>Témy</h3>
     <List
       dataSource={photoCompetitionTopics}
       renderRow={(row, i) => <ListItem key={i}>{row}</ListItem>}
     />
-    <h3 className="page__title">Fotky</h3>
-    <PhotoCard></PhotoCard>
+    <a href={googleAlbumUri} target="_blank">
+      <Button modifier="large" className="button__large">
+          Pridať fotku
+      </Button>
+    </a>
   </div>
 );
 

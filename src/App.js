@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, HashRouter } from 'react-router-dom';
-import { Page, Toolbar, Tabbar, Icon } from 'react-onsenui';
+import { Page, Toolbar } from 'react-onsenui';
 import Drinks from './components/Drinks';
 import Gdpr from './components/Gdpr';
 import PhotoCompetition from './components/PhotoCompetition';

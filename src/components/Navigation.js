@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import { List, ListItem, Icon } from 'react-onsenui';
+import { Icon } from 'react-onsenui';
 
 class NavigationItem extends Component {
     render () {

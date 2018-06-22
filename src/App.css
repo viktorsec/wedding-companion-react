@@ -111,3 +111,14 @@ a {
   line-height: 49px;
   color: rgb(0, 122, 255);
 }
+
+.button__large {
+  display: inline-block;
+  margin: 15px;
+  width: 90%;
+}
+
+.container__center {
+  width: 100%;
+  text-align: center;
+}
