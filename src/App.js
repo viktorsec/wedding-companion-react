@@ -21,7 +21,7 @@ const App = () => (
         </div>
         <div className='center'>Svadba</div>
         <div className='right'>
-          <label className="switch">
+          <label className="switch" style={{margin: '10px'}}>
             <input type="checkbox" className="switch__input" />
             <div className="switch__toggle">
               <div className="switch__handle"></div>
