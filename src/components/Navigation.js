@@ -1,26 +1,29 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import { List, ListItem } from 'react-onsenui';
+import { List, ListItem, Icon } from 'react-onsenui';
 
 class NavigationItem extends Component {
     render () {
         return (
-            <NavLink to={this.props.to}>
-                <ListItem tappable modifier="chevron">
-                    {this.props.text}
-                </ListItem>
-            </NavLink>
+            <label className="tabbar__item">
+              <NavLink to={this.props.to}>
+                  <button className="tabbar__button">
+                    <Icon icon={this.props.icon} className="tabbar__icon" />
+                    <div className="tabbar__label">{this.props.text}</div>
+                  </button>
+              </NavLink>
+            </label>
         )
     }
 }
 
 const Navigation = () => (
-    <List>
-        <NavigationItem to="/program" text="Program" />
-        <NavigationItem to="/drinks" text="Nápojový lístok" />
-        <NavigationItem to="/photo-competition" text="Fotosúťaž" />
-        <NavigationItem to="/transport" text="Doprava" />
-    </List>
+    <div className="tabbar">
+      <NavigationItem to="/program" text="Program" icon="fa-list" />
+      <NavigationItem to="/drinks" text="Nápojový lístok" icon="fa-glass" />
+      <NavigationItem to="/photo-competition" text="Fotosúťaž" icon="fa-star" />
+      <NavigationItem to="/transport" text="Doprava" icon="fa-bus" />
+    </div>
 );
 
 export default Navigation;
