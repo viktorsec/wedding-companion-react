@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button, List, ListItem } from 'react-onsenui';
+import FontAwesome from 'react-fontawesome';
 import { googleAlbumUri } from './consts/Secret';
 
 const photoCompetitionTopics = [
@@ -18,8 +19,13 @@ const photoCompetitionTopics = [
 ];
 
 const PhotoCompetition = () => (
-  <div className="conatiner__center">
-    <h3 className="page__title" style={{marginTop: '30px'}}>Témy</h3>
+  <div className="container__center">
+    <FontAwesome
+        name='camera-retro'
+        size='3x'
+        style={{marginLeft: 'auto', marginRight: 'auto', paddingTop: '10px'}}
+    />
+    <h1 className="page__title">Témy</h1>
     <List
       dataSource={photoCompetitionTopics}
       renderRow={(row, i) => <ListItem key={i}>{row}</ListItem>}

@@ -4,7 +4,7 @@ import { schedule } from './consts/Schedule'
 
 const Program = () => (
   <div>
-    <h3 className="page__title">Program</h3>
+    <h3 className="page__title" style={{color: '#021433'}}>Program</h3>
       <List
         dataSource={schedule}
         renderRow={(item, i) => (
