@@ -33,7 +33,7 @@ export const schedule = [
 	},
 	{
 		"time": "20:30",
-		"description": "Spoločné fotenie"
+		"description": "Spoločné fotenie vo viniciach"
 	},
 	{
 		"time": "21:00",

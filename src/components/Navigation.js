@@ -23,6 +23,7 @@ const Navigation = () => (
       <NavigationItem to="/drinks" text="Nápojový lístok" icon="fa-glass" />
       <NavigationItem to="/photo-competition" text="Fotosúťaž" icon="fa-star" />
       <NavigationItem to="/transport" text="Doprava" icon="fa-bus" />
+      <NavigationItem to="/help" text="Pomoc" icon="fa-life-ring" />
     </div>
 );
 
