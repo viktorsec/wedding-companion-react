@@ -29,11 +29,11 @@ export const schedule = [
 	},
 	{
 		"time": "19:30",
-		"description": "Prvý tanec mladomanželov a zahájenie diskotéky"
+		"description": "Prvý tanec"
 	},
 	{
 		"time": "20:30",
-		"description": "Spoločné fotenie pri západe slnka"
+		"description": "Spoločné fotenie"
 	},
 	{
 		"time": "21:00",
