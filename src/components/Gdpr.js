@@ -11,7 +11,6 @@ const Gdpr = () => (
             <li>Tiež neznášame spam, budeme vám preto posielať email maximálne raz za deň.</li>
             <li>Používame súbory cookies na zlepšenie vášho zážitku. Keď si chcete vypnúť cookies, odpojte sa od internetu.</li>
         </ul>
-        <img src="tutorial.png" />
         <NavLink to="/program">
             Akceptujem
         </NavLink>

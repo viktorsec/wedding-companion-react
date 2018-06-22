@@ -68,3 +68,8 @@
 a {
   text-decoration: none;
 }
+.img-fluid {
+  display: block;
+  width: 100%;
+  height: auto;
+}

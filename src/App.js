@@ -7,6 +7,7 @@ import PhotoCompetition from './components/PhotoCompetition';
 import Program from './components/Program';
 import Navigation from './components/Navigation';
 import Transport from './components/Transport';
+import Help from './components/Help';
 import 'onsenui/css/onsenui.css';
 import 'onsenui/css/onsen-css-components.css';
 import './App.css';
@@ -33,6 +34,7 @@ const App = () => (
         <Route path="/photo-competition" component={Navigation} />
         <Route path="/program" component={Navigation} />
         <Route path="/transport" component={Navigation} />
+        <Route path="/help" component={Navigation} />
       </div>
       <div>
         <Route exact path="/" component={Gdpr} />
@@ -40,6 +42,7 @@ const App = () => (
         <Route path="/photo-competition" component={PhotoCompetition} />
         <Route path="/program" component={Program} />
         <Route path="/transport" component={Transport} />
+        <Route path="/help" component={Help} />
       </div>
 
     </Page>
