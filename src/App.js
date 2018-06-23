@@ -22,6 +22,7 @@ class App extends Component {
       'comicScript': false,
       'reverse': false,
       'transparent': false,
+      'showShrek': false,
     };
   }
 
@@ -29,13 +30,23 @@ class App extends Component {
     const metaOrb = Math.random() * 100;
     const { state } = this;
 
+    if (metaOrb < 87) {
+      return;
+    }
     if (metaOrb < 90) {
+      this.setState({
+        'australia': !state.australia,
+      });
       return;
     }
     if (metaOrb < 92) {
       this.setState({
-        'australia': !state.australia,
-      })
+        'showShrek': !state.showShrek,
+      });
+      return;
+    }
+    if (metaOrb < 93) {
+      alert('我打酱油');
       return;
     }
     if (metaOrb < 94) {
@@ -59,7 +70,7 @@ class App extends Component {
   }
 
   render () {
-    const { australia, comicScript, reverse, transparent } = this.state;
+    const { australia, comicScript, reverse, transparent, showShrek } = this.state;
     var pageClassNames = classnames({
       australia,
       comicScript,
@@ -83,6 +94,7 @@ class App extends Component {
               </label>
             </div>
           </Toolbar>
+          { showShrek && <img className="img-fluid" src="shrek.jpg" alt="shrek" />}
           <div>
             <Route path="/drinks" component={Navigation} />
             <Route path="/photo-competition" component={Navigation} />
