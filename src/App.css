@@ -77,7 +77,7 @@ a {
   transform: rotate(180deg);
 }
 .comicScript {
-  font-family: "Comic Sans MS", "Comic Sans", "Chalkboard", cursive;
+  font-family: "Comic Sans MS", "Comic Sans", "Chalkduster", cursive !important;
 }
 .reverse {
   transform: scaleX(-1);

@@ -35,6 +35,7 @@ const PhotoCompetition = () => (
           Pridať fotku
       </Button>
     </a>
+    <p>Nezabudnite pridať do popisu tému kategórie v ktorej so snímkou súťažíte.</p>
   </div>
 );
 
